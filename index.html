@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фитнес везде — сеть фитнес-клубов премиум-класса в Москве</title>
+<meta name="description" content="Фитнес везде — сеть фитнес-клубов премиум-класса. Тренажёрный зал, йога, кроссфит, бокс и пилатес. Первое занятие бесплатно. 12 направлений, 40+ тренеров, 3000 м².">
+<link rel="canonical" href="https://12oneliner.github.io/fitnessvezde/">
+<meta property="og:title" content="Фитнес везде — начни прямо сейчас">
+<meta property="og:description" content="Тренажёрный зал, йога, кроссфит, бокс и пилатес. Первое занятие бесплатно. Пробная тренировка с диагностикой тела.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://12oneliner.github.io/fitnessvezde/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop">
+<meta name="theme-color" content="#B99244">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='10' fill='%23B99244'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='18' fill='white'>F</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"Фитнес везде","address":{"@type":"PostalAddress","addressLocality":"Москва","streetAddress":"ул. Спортивная, 12"},"telephone":"+7-800-123-45-67","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"247"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Как проходит первое бесплатное занятие?","acceptedAnswer":{"@type":"Answer","text":"Вы оставляете заявку, администратор связывается в течение часа и подбирает удобное время. На месте тренер проводит диагностику, показывает зал и первую тренировку. Занятие ни к чему не обязывает."}},{"@type":"Question","name":"Я никогда не занимался. Мне подойдёт клуб?","acceptedAnswer":{"@type":"Answer","text":"Да. 60% наших участников начинали с нуля. Программа строится от вашего уровня, а дежурный тренер всегда следит за техникой. Групповые занятия разделены на уровни."}},{"@type":"Question","name":"Можно ли заморозить абонемент?","acceptedAnswer":{"@type":"Answer","text":"Дневной тариф — до 14 дней в году, безлимит — до 30 дней. Заморозка активируется в приложении за несколько секунд."}},{"@type":"Question","name":"Что взять с собой на первую тренировку?","acceptedAnswer":{"@type":"Answer","text":"Только спортивную форму и кроссовки. Полотенца, косметика в душевых и вода входят в стоимость абонемента."}},{"@type":"Question","name":"Есть ли рассрочка на абонемент?","acceptedAnswer":{"@type":"Answer","text":"На персональный тариф доступна беспроцентная рассрочка на 4 месяца через партнёрский банк."}}]}
+</script>
+</head>
+<body>
+
+<div class="demo-bar">
+  <span><b>Демо для портфолио</b> · Адаптация под ваш бренд за 24 часа · Заявки в Telegram</span>
+  <button class="demo-admin" id="openAdmin" type="button">Как приходят заявки</button>
+  <a href="#cta">Хочу такой сайт</a>
+  <!-- QR ведёт на живой сайт проекта -->
+  <img class="demo-qr" alt="QR — ссылка на сайт" width="28" height="28" src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://12oneliner.github.io/fitnessvezde/&color=1A1A18">
+</div>
+
+<header class="nav" id="nav">
+  <a href="#" class="logo"><span class="logo-mark">F</span> Фитнес везде</a>
+  <ul class="nav-links">
+    <li><a href="#directions">Направления</a></li>
+    <li><a href="#about">Клуб</a></li>
+    <li><a href="#pricing">Абонементы</a></li>
+    <li><a href="#faq">Вопросы</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="niche-switch" aria-label="Выбор ниши">
+      <button class="active" data-niche="fitness">Фитнес</button>
+      <button data-niche="yoga">Йога</button>
+      <button data-niche="fight">Бои</button>
+    </div>
+    <a href="#cta" class="nav-cta">Пробное занятие</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#directions">Направления</a>
+  <a href="#about">Клуб</a>
+  <a href="#pricing">Абонементы</a>
+  <a href="#faq">Вопросы</a>
+  <div class="niche-switch" style="margin-top:4px">
+    <button class="active" data-niche="fitness">Фитнес</button>
+    <button data-niche="yoga">Йога</button>
+    <button data-niche="fight">Бои</button>
+  </div>
+  <a href="#cta" class="btn btn-gold" style="margin-top:8px">Записаться бесплатно <span class="icon-orb"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span></a>
+  <a href="#cta" class="btn btn-ghost" id="openQuizMobile">Подобрать программу за 30 сек</a>
+</div>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Сеть фитнес-клубов</span>
+      <h1 id="heroTitle">Начни <em>прямо сейчас</em> — остальное приложится</h1>
+      <p class="lead" id="heroLead">Фитнес везде — это залы без лишнего пафоса и с продуманной программой. Тренер, план и поддержка с первого дня. Ваше первое занятие — бесплатно.</p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn btn-gold">Записаться бесплатно <span class="icon-orb"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span></a>
+        <button class="btn btn-ghost" id="openQuiz">Подобрать программу</button>
+      </div>
+      <div class="hero-note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        Без скрытых платежей · заморозка абонемента · возврат в течение 14 дней
+      </div>
+      <div class="rating-mini">
+        <span class="stars">★★★★★</span>
+        <b>4.9</b> <span>на Яндекс Картах · 247 отзывов · <a href="#reviews" style="text-decoration:underline;text-underline-offset:3px">смотреть</a></span>
+      </div>
+    </div>
+    <div class="hero-visual reveal" style="transition-delay:.12s">
+      <div class="hero-visual-inner">
+        <img id="heroImg" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=900&auto=format&fit=crop" alt="Светлый тренажёрный зал клуба Фитнес везде" width="900" height="560" loading="eager" fetchpriority="high">
+      </div>
+      <div class="hero-badge"><div class="num">92%</div><div class="txt">участников продолжают<br>после первого месяца</div></div>
+      <div class="hero-badge-2">Открыты 06:00 — 24:00</div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><div class="value" data-count="12">0</div><div class="label">направлений тренировок</div></div>
+    <div class="stat reveal" style="transition-delay:.08s"><div class="value" data-count="40" data-suffix="+">0</div><div class="label">сертифицированных тренеров</div></div>
+    <div class="stat reveal" style="transition-delay:.16s"><div class="value" data-count="3000" data-suffix=" м²">0</div><div class="label">площадь клуба</div></div>
+    <div class="stat reveal" style="transition-delay:.24s"><div class="value" data-count="24" data-suffix="/7">0</div><div class="label">поддержка и доступ</div></div>
+  </div>
+</section>
+
+<section class="section" id="directions">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Направления</span>
+      <h2 class="h2">Один клуб — <em>все форматы</em> тренировок</h2>
+      <p class="lead">От спокойной йоги на рассвете до интервального бокса вечером. Расписание составлено так, чтобы занятие находилось в любой день.</p>
+    </div>
+    <div class="bento">
+      <div class="card c1 reveal"><span class="tag">Самое популярное</span><span class="idx">01</span><h3 id="c1h">Тренажёрный зал</h3><p id="c1p">220 единиц оборудования, зоны свободных весов и кардиотерраса. Дежурный тренер всегда рядом — поможет с техникой и составит план.</p></div>
+      <div class="card c2 reveal" style="transition-delay:.08s"><span class="idx">02</span><h3 id="c2h">Йога и стретчинг</h3><p id="c2p">Утренние и вечерние практики в тихом зале с панорамными окнами. Подходит новичкам без опыта.</p></div>
+      <div class="card c3 reveal"><span class="idx">03</span><h3>Кроссфит</h3><p>Функциональные тренировки в мини-группах до 10 человек под контролем тренера.</p></div>
+      <div class="card c4 reveal" style="transition-delay:.08s"><span class="idx">04</span><h3>Бокс и единоборства</h3><p>Ринг, мешки и спарринг-зоны. Постановка удара с нуля за восемь занятий.</p></div>
+      <div class="card c5 reveal" style="transition-delay:.16s"><span class="idx">05</span><h3>Пилатес</h3><p>Работа с осанкой на реформерах. Индивидуальные и парные форматы.</p></div>
+      <div class="card c6 reveal">
+        <div><h3>Не знаете, с чего начать?</h3><p>Пройдите бесплатную диагностику тела: тренер оценит подготовку, подберёт направление и составит план на первые 30 дней. Или пройдите квиз за 30 секунд.</p></div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="#cta" class="btn btn-gold">Пройти диагностику <span class="icon-orb"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span></a>
+          <button class="btn btn-ghost" id="openQuiz2" style="border-color:rgba(255,255,255,.2);color:#fff">Квиз за 30 сек</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about" style="padding-top:0">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Почему мы</span>
+      <h2 class="h2">Зал, в который <em>хочется вернуться</em></h2>
+      <p class="lead">Мы убрали всё, что мешает тренироваться: очереди на оборудование, навязчивые продажи и страх «быть новичком».</p>
+      <ul class="feature-list">
+        <li><span class="no">01</span><div><h3>Личный план с первого дня</h3><p>Каждому участнику — программа под цель: похудение, сила, гибкость или подготовка к соревнованиям.</p></div></li>
+        <li><span class="no">02</span><div><h3>Никакой толкучки</h3><p>Лимит на одновременное посещение и приложение с онлайн-загрузкой зала в реальном времени.</p></div></li>
+        <li><span class="no">03</span><div><h3>Чистота уровня отеля</h3><p>Уборка каждые два часа, одноразовые полотенца, косметика в душевых включена в абонемент.</p></div></li>
+        <li><span class="no">04</span><div><h3>Заморозка без вопросов</h3><p>Уезжаете в отпуск или приболели — абонемент ставится на паузу за одно нажатие в приложении.</p></div></li>
+      </ul>
+    </div>
+    <div class="split-visual reveal" style="transition-delay:.12s">
+      <div class="split-visual-inner">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=860&auto=format&fit=crop" alt="Интерьер клуба Фитнес везде" width="860" height="620" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Команда</span>
+      <h2 class="h2">Тренеры, <em>с которыми растёшь</em></h2>
+      <p class="lead">Сертифицированные наставники с опытом 5–15 лет. Подберём тренера под ваш темперамент и цель.</p>
+    </div>
+    <div class="trainers">
+      <div class="trainer reveal">
+        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=600&auto=format&fit=crop" alt="Марина Волкова — тренер по йоге" width="600" height="280" loading="lazy">
+        <div class="trainer-body"><h3>Марина Волкова</h3><div class="role">Йога · Пилатес · 12 лет опыта</div><p>Мастер спорта по художественной гимнастике. Мягко возвращает спину и осанку даже после травм.</p><span class="trainer-tag">★★★★★ 4.9 · 128 отзывов</span></div>
+      </div>
+      <div class="trainer reveal" style="transition-delay:.07s">
+        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=600&auto=format&fit=crop" alt="Артём Соколов — тренер по кроссфиту" width="600" height="280" loading="lazy">
+        <div class="trainer-body"><h3>Артём Соколов</h3><div class="role">Кроссфит · Функциональный тренинг</div><p>Чемпион Москвы по функциональному многоборью. Ведёт мини-группы до 10 человек.</p><span class="trainer-tag">★★★★★ 4.9 · 96 отзывов</span></div>
+      </div>
+      <div class="trainer reveal" style="transition-delay:.14s">
+        <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=600&auto=format&fit=crop" alt="Денис Карев — тренер по боксу" width="600" height="280" loading="lazy">
+        <div class="trainer-body"><h3>Денис Карев</h3><div class="role">Бокс · Единоборства · МС</div><p>Поставит удар с нуля за 8 занятий. Ринг, лапы, спарринги — без агрессии, с техникой.</p><span class="trainer-tag">★★★★★ 5.0 · 74 отзыва</span></div>
+      </div>
+      <div class="trainer reveal" style="transition-delay:.21s">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600&auto=format&fit=crop" alt="Елена Титова — тренер тренажёрного зала" width="600" height="280" loading="lazy">
+        <div class="trainer-body"><h3>Елена Титова</h3><div class="role">Тренажёрный зал · Нутрициология</div><p>Составляет план питания и ведёт до результата. −11 кг у подопечных за 4 месяца — норма.</p><span class="trainer-tag">★★★★★ 4.9 · 142 отзыва</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Галерея</span>
+      <h2 class="h2">Посмотрите <em>как у нас внутри</em></h2>
+      <p class="lead">Светлые залы, панорамные окна, чистота уровня отеля. Приходите на экскурсию — покажем всё без записи.</p>
+    </div>
+    <div class="gallery reveal">
+      <a href="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600&auto=format&fit=crop" alt="Тренажёрный зал — общий вид" width="600" height="280" loading="lazy"></a>
+      <a href="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1200&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=600&auto=format&fit=crop" alt="Зал функционального тренинга" width="600" height="280" loading="lazy"></a>
+      <a href="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=600&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=600&auto=format&fit=crop" alt="Зона силовых тренировок" width="600" height="280" loading="lazy"></a>
+      <a href="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=600&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=600&auto=format&fit=crop" alt="Кардио-зона" width="600" height="280" loading="lazy"></a>
+      <a href="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600&auto=format&fit=crop" alt="Групповое занятие" width="600" height="280" loading="lazy"></a>
+      <a href="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600&auto=format&fit=crop" alt="Зал йоги" width="600" height="280" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing" style="background:var(--bone);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Абонементы</span>
+      <h2 class="h2">Честные цены. <em>Без мелкого шрифта</em></h2>
+      <p class="lead">Все тарифы включают полный доступ к залу, групповым занятиям, душевым и приложению. Оплата помесячно, без годовых списаний.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal"><div class="plan-tag">Дневной</div><div class="price">2 490 <small>₽ / мес</small></div><ul><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Зал с 06:00 до 17:00 в будни</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Групповые занятия без ограничений</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Приложение и заморозка до 14 дней</li></ul><a href="#cta" class="btn btn-ghost">Выбрать дневной</a></div>
+      <div class="plan featured reveal" style="transition-delay:.1s"><div class="plan-tag">Безлимит — выбор 8 из 10 участников</div><div class="price">3 990 <small>₽ / мес</small></div><ul><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Доступ 06:00 — 24:00 без выходных</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Все направления, включая бассейн</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Одна персональная тренировка в месяц</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Заморозка до 30 дней</li></ul><a href="#cta" class="btn btn-gold">Выбрать безлимит</a></div>
+      <div class="plan reveal" style="transition-delay:.2s"><div class="plan-tag">Персональный</div><div class="price">9 900 <small>₽ / мес</small></div><ul><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>8 персональных тренировок</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>План питания от нутрициолога</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Безлимитный доступ включён</li></ul><a href="#cta" class="btn btn-ghost">Выбрать персональный</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Отзывы</span><h2 class="h2">Что говорят <em>участники клуба</em></h2><p class="lead">Рейтинг 4.9 на Яндекс Картах на основе 247 отзывов. Публикуем только проверенные истории.</p></div>
+    <div class="quotes">
+      <div class="quote reveal"><div class="stars">★★★★★</div><blockquote>«За четыре месяца минус 11 килограммов и привычка вставать в шесть утра. Тренер Марина — золото, в прямом смысле».</blockquote><div class="author"><div class="ava">АК</div><div><div class="name">Анна К.</div><div class="sub">в клубе 5 месяцев</div></div></div></div>
+      <div class="quote reveal" style="transition-delay:.08s"><div class="stars">★★★★★</div><blockquote>«Перепробовал пять залов в городе. Здесь единственный, где никогда не жду очередь на скамью и где всегда чисто».</blockquote><div class="author"><div class="ava">ДС</div><div><div class="name">Дмитрий С.</div><div class="sub">в клубе 1 год 2 месяца</div></div></div></div>
+      <div class="quote reveal" style="transition-delay:.16s"><div class="stars">★★★★★</div><blockquote>«Пришла на йогу после травмы спины. Через полгода — первый полумарафон. Спасибо за бережный подход».</blockquote><div class="author"><div class="ava">ЕМ</div><div><div class="name">Елена М.</div><div class="sub">в клубе 8 месяцев</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="map-block reveal">
+      <div class="map-frame">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a2e3d4f5g6h7j8k9l0&source=constructor&ll=37.6176%2C55.7558&z=14&pt=37.6176,55.7558,pm2rdm" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта — Фитнес везде, Москва"></iframe>
+      </div>
+      <div class="map-side">
+        <span class="eyebrow">Контакты и адрес</span>
+        <h3 style="font-size:26px">Приходите на экскурсию без записи</h3>
+        <p class="addr"><b>г. Москва, ул. Спортивная, 12</b> · м. Спортивная, 3 мин пешком<br>Пн–Пт 06:00–24:00 · Сб–Вс 08:00–23:00</p>
+        <div class="map-kv"><div><b>4.9 ★</b><span>Яндекс Карты · 247 отзывов</span></div><div><b>3 мин</b><span>от метро пешком</span></div></div>
+        <div class="map-actions">
+          <a href="tel:+78001234567" class="btn btn-ink">Позвонить 8 (800) 123-45-67</a>
+          <a href="https://yandex.ru/maps/?text=Москва%20ул%20Спортивная%2012" target="_blank" rel="noopener" class="btn btn-ghost">Построить маршрут</a>
+        </div>
+        <p style="font-size:12.5px;color:var(--ink-muted)">Нажмите «Перезвоните мне» — администратор свяжется за 7 минут и забронирует время экскурсии.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal" style="text-align:center;max-width:100%"><span class="eyebrow">Частые вопросы</span><h2 class="h2">Осталось <em>что-то уточнить?</em></h2></div>
+    <div class="faq reveal">
+      <div class="faq-item"><button class="faq-q">Как проходит первое бесплатное занятие? <span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><p>Вы оставляете заявку, администратор связывается в течение часа и подбирает удобное время. На месте тренер проводит диагностику, показывает зал и первую тренировку. Занятие ни к чему не обязывает.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Я никогда не занимался. Мне подойдёт клуб? <span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><p>Да. 60% наших участников начинали с нуля. Программа строится от вашего уровня, а дежурный тренер всегда следит за техникой. Групповые занятия разделены на уровни: новички тренируются отдельно от продвинутых.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Можно ли заморозить абонемент? <span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><p>Конечно. Дневной тариф — до 14 дней в году, безлимит — до 30 дней. Заморозка активируется в приложении за несколько секунд, без звонков и объяснения причин.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Что взять с собой на первую тренировку? <span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><p>Только спортивную форму и кроссовки. Полотенца, косметика в душевых и вода входят в стоимость абонемента. Шкафчики закрываются на электронный ключ.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Есть ли рассрочка на абонемент? <span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><p>Да, на персональный тариф доступна беспроцентная рассрочка на 4 месяца через партнёрский банк. Оформление занимает пять минут прямо в клубе.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cta" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div class="cta-inner">
+        <span class="eyebrow">Первое занятие — бесплатно</span>
+        <h2 class="h2">Не с понедельника. <em>Сегодня.</em></h2>
+        <p class="lead">Оставьте телефон — перезвоним в течение часа, подберём удобное время и тренера под вашу цель.</p>
+        <form class="cta-form" id="ctaForm" novalidate>
+          <div class="field"><input type="text" name="name" placeholder="Ваше имя" required autocomplete="name" aria-label="Ваше имя"><small></small></div>
+          <div class="field"><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel" aria-label="Телефон" inputmode="tel" maxlength="18"><small></small></div>
+          <button type="submit" class="btn btn-gold">Хочу пробное <span class="icon-orb"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span></button>
+        </form>
+        <p class="cta-note">Нажимая кнопку, вы соглашаетесь с <a href="#" data-open="privacy" style="text-decoration:underline;text-underline-offset:3px">политикой обработки персональных данных</a>. Никакого спама — только звонок администратора.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="included reveal">
+      <div>
+        <span class="eyebrow" style="background:rgba(255,255,255,.1);color:var(--gold-soft);border:1px solid rgba(255,255,255,.12)">Для покупателя шаблона</span>
+        <h2>Покупаете не картинку — <em style="color:var(--gold-soft)">готовый бизнес-лендинг</em></h2>
+        <p>Этот же дизайн за 24 часа адаптируем под ваш бренд, нишу и город. Без конструкторов — чистый код, который легко поддерживать.</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Адаптив 320–1440, Lighthouse 95+, SEO-разметка и Open Graph</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Заявки в Telegram / на почту / в CRM, маска телефона, антиспам</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Квиз на 30 сек, попап ухода, квиз + счётчики + FAQ без перезагрузки</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Замена фото, текстов, цветов и ниши (фитнес / йога / бои) за 1 день</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Хостинг, домен и инструкция — покажем как вносить правки без программиста</li>
+        </ul>
+      </div>
+      <div class="included-card">
+        <h3>Хочу такой же сайт</h3>
+        <p style="color:rgba(255,255,255,.66)">Оставьте контакт — пришлём смету и покажем как будет выглядеть ваш вариант за 2 часа.</p>
+        <div class="price-row"><b>от 35 000 ₽</b> <s>55 000 ₽</s> <span style="background:var(--gold);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;padding:6px 10px;border-radius:999px">−35% до конца месяца</span></div>
+        <a href="#cta" class="btn btn-gold">Обсудить мой проект <span class="icon-orb"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span></a>
+        <p style="margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.45)">Отвечаем за 15 минут · без навязчивых продаж · покажем 3 референса под вашу нишу</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a href="#" class="logo"><span class="logo-mark">F</span> Фитнес везде</a><p>Сеть фитнес-клубов премиум-класса. Тренировки, которые становятся привычкой, а не обязанностью.</p></div>
+      <div class="foot-col"><h4>Клуб</h4><a href="#directions">Направления</a><a href="#about">О нас</a><a href="#pricing">Абонементы</a><a href="#faq">Вопросы</a></div>
+      <div class="foot-col"><h4>Контакты</h4><a href="tel:+78001234567">8 (800) 123-45-67</a><a href="mailto:hello@fitness-vezde.ru">hello@fitness-vezde.ru</a><a href="https://yandex.ru/maps/?text=Москва%20ул%20Спортивная%2012" target="_blank" rel="noopener">г. Москва, ул. Спортивная, 12</a></div>
+      <div class="foot-col"><h4>Режим работы</h4><span style="display:block;font-size:14.5px;color:var(--ink-soft);padding:6px 0">Пн–Пт: 06:00 — 24:00</span><span style="display:block;font-size:14.5px;color:var(--ink-soft);padding:6px 0">Сб–Вс: 08:00 — 23:00</span><span style="display:block;font-size:14.5px;color:var(--ink-soft);padding:6px 0">Персональные — по записи</span></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Фитнес везде. Все права защищены.</span><span><a href="#" data-open="privacy">Политика конфиденциальности</a> · <a href="#" data-open="offer">Оферта</a></span></div>
+  </div>
+</footer>
+
+<!-- QUIZ -->
+<div class="modal" id="quizModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="quizTitle">
+  <div class="modal-backdrop" data-close="quizModal"></div>
+  <div class="modal-box">
+    <button class="modal-close" data-close="quizModal" aria-label="Закрыть"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <span class="eyebrow">Квиз · 30 секунд</span>
+    <h3 id="quizTitle">Подберём программу под вашу цель</h3>
+    <div class="quiz-progress"><i id="quizBar"></i></div>
+    <div class="quiz-step active" data-step="1">
+      <p><b>1/3 · Ваша цель?</b></p>
+      <div class="quiz-opts">
+        <button data-value="Похудение">Похудение и тонус</button>
+        <button data-value="Набор массы">Набор массы и сила</button>
+        <button data-value="Здоровье">Здоровье спины и гибкость</button>
+        <button data-value="Выносливость">Выносливость и энергия</button>
+      </div>
+    </div>
+    <div class="quiz-step" data-step="2">
+      <p><b>2/3 · Ваш опыт?</b></p>
+      <div class="quiz-opts">
+        <button data-value="Новичок">Новичок — начинаю с нуля</button>
+        <button data-value="Продолжающий">Тренируюсь эпизодически</button>
+        <button data-value="Продвинутый">Продвинутый — нужен прогресс</button>
+      </div>
+    </div>
+    <div class="quiz-step" data-step="3">
+      <p><b>3/3 · Удобный формат?</b></p>
+      <div class="quiz-opts">
+        <button data-value="Группы">Групповые занятия</button>
+        <button data-value="Персонально">Персонально с тренером</button>
+        <button data-value="Свободный зал">Свободный зал по плану</button>
+      </div>
+    </div>
+    <div class="quiz-step" data-step="4">
+      <p><b>Отлично — программа готова</b></p>
+      <p id="quizResult" style="margin-top:10px;background:var(--gold-wash);border:1px solid var(--line);border-radius:14px;padding:16px"></p>
+      <form class="cta-form" id="quizForm" novalidate style="margin-top:18px">
+        <div class="field"><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required inputmode="tel" maxlength="18" aria-label="Телефон"><small></small></div>
+        <button type="submit" class="btn btn-gold">Получить план <span class="icon-orb"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span></button>
+      </form>
+      <p style="margin-top:10px;font-size:12.5px;color:var(--ink-muted)">Перезвоним за 7 минут и пришлём план на первые 30 дней.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SUCCESS -->
+<div class="modal" id="successModal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" data-close="successModal"></div>
+  <div class="modal-box" style="text-align:center">
+    <button class="modal-close" data-close="successModal" aria-label="Закрыть"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <div style="width:64px;height:64px;border-radius:50%;background:var(--gold-pale);color:var(--gold-deep);display:flex;align-items:center;justify-content:center;margin:0 auto 18px"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+    <h3>Спасибо, <span id="successName">мы на связи</span>!</h3>
+    <p style="margin-top:8px">Заявка ушла администратору. Перезвоним в течение часа и подберём удобное время. А пока — сохраните наш номер: <a href="tel:+78001234567" style="color:var(--gold-deep);font-weight:600">8 (800) 123-45-67</a></p>
+    <div style="margin-top:22px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <button class="btn btn-gold" data-close="successModal">Отлично, жду звонка</button>
+      <button class="btn btn-ghost" id="successQuiz">Пройти квиз за 30 сек</button>
+    </div>
+  </div>
+</div>
+
+<!-- EXIT INTENT -->
+<div class="modal" id="exitModal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" data-close="exitModal"></div>
+  <div class="modal-box">
+    <button class="modal-close" data-close="exitModal" aria-label="Закрыть"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <span class="eyebrow">Подождите</span>
+    <h3>Заберите 3 дня бесплатно</h3>
+    <p style="margin-top:8px">Оставьте номер — дадим гостевой доступ на 3 дня + диагностику тела с тренером. Без карты и подписок.</p>
+    <form class="cta-form" id="exitForm" novalidate style="margin-top:20px">
+      <div class="field"><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required inputmode="tel" maxlength="18" aria-label="Телефон"><small></small></div>
+      <button type="submit" class="btn btn-gold">Забрать 3 дня <span class="icon-orb"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span></button>
+    </form>
+  </div>
+</div>
+
+<!-- PRIVACY / OFFER -->
+<div class="modal" id="privacyModal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" data-close="privacyModal"></div>
+  <div class="modal-box">
+    <button class="modal-close" data-close="privacyModal" aria-label="Закрыть"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <h3>Политика конфиденциальности</h3>
+    <p style="margin-top:12px;white-space:pre-line">Мы бережно относимся к вашим данным. Телефон и имя используются только для связи по вашей заявке и не передаются третьим лицам. Храним данные до 1 года. По запросу на hello@fitness-vezde.ru удалим их в течение 3 дней. Отправляя форму, вы даёте согласие на обработку персональных данных. Это демо-страница для портфолио — замените текст на вашу политику перед публикацией.</p>
+  </div>
+</div>
+<div class="modal" id="offerModal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" data-close="offerModal"></div>
+  <div class="modal-box">
+    <button class="modal-close" data-close="offerModal" aria-label="Закрыть"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <h3>Публичная оферта</h3>
+    <p style="margin-top:12px;white-space:pre-line">Информация на сайте не является публичной офертой. Стоимость и расписание уточняйте у администратора. Абонементы активируются в день первого посещения. Заморозка и возврат — по правилам клуба. Для шаблона в портфолио — замените этот текст на вашу оферту.</p>
+  </div>
+</div>
+
+<!-- ADMIN / ПАНЕЛЬ ЗАЯВОК (демо) -->
+<div class="modal" id="adminModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+  <div class="modal-backdrop" data-close="adminModal"></div>
+  <div class="modal-box modal-box-wide">
+    <button class="modal-close" data-close="adminModal" aria-label="Закрыть"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <span class="eyebrow">Демо-панель · данные обезличены</span>
+    <h3 id="adminTitle">Что видит владелец клуба</h3>
+    <p style="margin-top:8px">Каждая заявка с сайта уходит в Telegram за 2 секунды и попадает в этот список. Ниже — как это выглядит в реальной работе.</p>
+
+    <div class="adm-kpis">
+      <div class="adm-kpi"><div class="adm-kpi-v" data-adm-count="127">0</div><div class="adm-kpi-l">заявок за 30 дней</div></div>
+      <div class="adm-kpi"><div class="adm-kpi-v" data-adm-count="7" data-adm-suffix=",4%">0</div><div class="adm-kpi-l">конверсия сайта</div></div>
+      <div class="adm-kpi"><div class="adm-kpi-v" data-adm-count="6" data-adm-suffix=" мин">0</div><div class="adm-kpi-l">среднее время ответа</div></div>
+      <div class="adm-kpi"><div class="adm-kpi-v" data-adm-count="41" data-adm-suffix="%">0</div><div class="adm-kpi-l">доля заявок из квиза</div></div>
+    </div>
+
+    <div class="adm-panel">
+      <div class="adm-panel-head">
+        <h4>Заявки по дням · 14 дней</h4>
+        <span class="adm-legend"><i></i> заявка</span>
+      </div>
+      <div class="adm-chart" id="admChart" role="img" aria-label="График заявок за 14 дней: рост с 4 до 12 заявок в день"></div>
+    </div>
+
+    <div class="adm-cols">
+      <div class="adm-panel">
+        <div class="adm-panel-head">
+          <h4>Последние заявки</h4>
+          <span class="adm-live"><i></i> live</span>
+        </div>
+        <ul class="adm-leads" id="admLeads"></ul>
+        <p class="adm-note">Телефоны скрыты — это демо. В вашей панели они видны полностью и кликабельны.</p>
+      </div>
+
+      <div class="adm-panel adm-tg">
+        <div class="adm-panel-head"><h4>Как выглядит в Telegram</h4></div>
+        <div class="adm-tg-chat">
+          <div class="adm-tg-msg">
+            <div class="adm-tg-from">Заявки · Фитнес везде</div>
+            <div class="adm-tg-text" id="admTgText">Заявка с сайта
+Имя: Анна
+Телефон: +7 (912) 345-67-89
+Источник: quiz
+Квиз: Похудение / Новичок / Группы</div>
+            <div class="adm-tg-time">только что</div>
+          </div>
+        </div>
+        <p class="adm-note">Токен бота лежит в переменных окружения на сервере — в коде сайта его нет.</p>
+      </div>
+    </div>
+
+    <div class="adm-foot">
+      <a href="#cta" class="btn btn-gold" data-close="adminModal">Хочу такой сайт с заявками <span class="icon-orb"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span></a>
+      <button class="btn btn-ghost" data-close="adminModal">Закрыть панель</button>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+  <div class="lightbox-backdrop"></div>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-close" aria-label="Закрыть"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

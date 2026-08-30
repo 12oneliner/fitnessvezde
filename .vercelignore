@@ -1,0 +1,6 @@
+node_modules
+.git
+.claude
+telegram-worker.js
+wrangler.toml
+сайт 2

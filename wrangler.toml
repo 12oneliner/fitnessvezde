@@ -1,0 +1,7 @@
+name = "fitness-telegram-bot"
+main = "telegram-worker.js"
+compatibility_date = "2024-01-01"
+
+# Переменные окружения (секреты добавите командой wrangler secret)
+[vars]
+# BOT_TOKEN и CHAT_ID будут добавлены как секреты
